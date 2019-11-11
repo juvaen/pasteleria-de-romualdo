@@ -1,0 +1,6 @@
+*.swp
+*.swo
+*.log
+*.out
+.fuse_hidden*
+nohup.out
