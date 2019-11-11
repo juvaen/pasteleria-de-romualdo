@@ -1,0 +1,105 @@
+Nombre: Juan Valencia Escalante
+Grupo: Grupo 1 Matutino
+Fecha: 2019-11-11 (11 de noviembre de 2019)
+
+GIT
+
+Cual es la diferencia entre git y GitHUB?
+GitHUB es un sistema que provee una interface para Git, utilizable desde el navegador,
+además provee otras herramientas para verificación de código y para trabajo en equipo.
+Las funciones de Git son utilizables sin problemas desde siempre, pero requería un
+dominio significativo de los comandos para ciertas operación. GitHUB permite hacer
+todo esto fácilmente. Y además provee funciones de red social.
+Y Git sigue siendo lo que permite el manejo de versiones, el sistema que está debajo
+de Git. Fue originalmente creado por Linus Torvalds ya que el manejo del código del
+kernel de Linux era todo un show y se necesitaba algo para permitir la colaboración
+de programadores, no sincronizados, desde todas las regiones del mundo.
+
+En cuantos y cuales estados puede estar un archivo?
+Un archivo puede estar en 3 estados diferentes (los pongo en inglés pues no estoy
+seguro de las traducciones):
+    Modified: Un archivo ha sido cambiado pero no ha sido marcado para que sea parte
+        del próximo commit.
+    Staged: El archivo la sido marcado para que se vuelva parte del próximo commit
+    Commmited: El archivo se ha agregado a la base de datos local de git, ya aparece
+        al darle "git log" por ejemplo.
+
+Para que sirve el comando "git add ." ?
+Marca todos los archivos cambiados del directorio en el que se trabaja actualmente
+(el . en Linux representa el directorio actual) como "Staged", para que en el
+próximo commit sean tomados en cuenta.
+
+Cuales son los 4 datos mas relevantes a la hora de hacer un commit?
+- El título del commit (yo diría el comentario pero creo que no es lo más importante
+    para todos ^_^ )
+- El autor del commit
+- La fecha del commit
+- El checksum del commit, este se utilizará para poder comparar diferentes commits,
+    cada commit tiene uno único.
+
+Cual es el comando para crear una rama en mi repositorio?
+    git checkout -b nombre-de-la-rama
+
+JIRA
+
+Defina lo que es un issue:
+Como se traduciría literalmente, es un "asunto" a tratar. El issue puede ser ya sea
+arreglar un bug, cambiar un código, agregar algo nuevo, quitar algo, casi cualquier
+acción que deba de tratarse, es en Jira un "issue", algo que requiere de la atención
+de alguien.
+
+En kanban y scrum, cuales son las columnas default de un tablero?
+
+KANBAN  
+    - BACKLOG
+    - SELECTED FOR DEVELOPMENT
+    - IN PROGRESS
+    - DONE
+
+SCRUM
+    - TO DO
+    - IN PROGRESS
+    - DONE
+
+Como se selecciona un Dashboard para mostrarse en la pantalla de bienvenida?
+Se hace click en la tuerca que está en el panel izquierdo hasta casi abajo, luego de ahí
+User Management > Application Settings (Jira) > System Dashboard
+Honestamente de ahí no se, y sigo usando Pipefy =/
+
+
+Jenkins
+
+Cual es el atajo (ruta relativa) para el directorio home de un usuario de ubuntu?
+El caracter "~"
+
+Como se installa Jenkins en un sistema linux?
+En Debian/Ubuntu/Linux Mint:
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+Ya instalado:
+sudo service jenkins start
+
+O, más realísticamente hablando:
+Googlear "jenkins install linux"
+Entrar a https://jenkins.io/doc/book/installing/
+Copiar y pegar los comandos
+
+Aunque, se podía hacer "sudo apt-get install jenkins" directo, solo hubiera instalado una versión que
+no era la más nueva que hay.
+
+Cual es la relacion entre Hudson y Jenkins? 
+Hudson fue lo que había antes de Jenkins, era software libre soportado y mantenido por la comunidad,
+y pertenecía a Sun Microsystems.
+Entonces entró Oracle y compró a Sun Microsystems, y ha habido una gran cantidad de forks desde
+entonces debido a que Oracle cambió las licencias. Al ser software libre, hasta cierta versión aún es
+software libre. Tras la adquisición de Oracle:
+Open Office se volvió Libre Office
+MySQL se volvió MariaDB
+y Hudson se volvió Jenkins
+
+Y Java, es la razón por la que todo mundo sigue en Java 8, aunque ya van en Java 13 con Oracle, pero
+ya no es libre.
